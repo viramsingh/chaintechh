@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chaintech Network</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/04db810459.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      .menu {
+        transition: transform 0.3s ease-in-out;
+      }
+    </style>
+  </head>
+  <body class="bg-white">
+    <!-- Header -->
+    <header class="border-b border-gray-700">
+      <div class="flex items-center bg-black px-5 md:px-10 py-4">
+        <div class="flex-grow flex justify-center">
+          <div class="logo">
+            <img src="./images/Group.png" alt="Chaintech Logo" class="w-36" />
+          </div>
+        </div>
+
+        <nav class="flex justify-between items-center p-4">
+          <div class="hidden md:block">
+            <ul class="flex space-x-6 text-white text-base">
+              <li><a href="#" class="hover:text-green-500">Company</a></li>
+              <li><a href="#" class="hover:text-green-500">Services</a></li>
+              <li>
+                <a href="#" class="hover:text-green-500">Business Models</a>
+              </li>
+              <li><a href="#" class="hover:text-green-500">Blogs</a></li>
+              <li><a href="#" class="hover:text-green-500">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="md:hidden flex flex-col cursor-pointer" id="menu-toggle">
+            <div class="h-1 w-6 bg-white mb-1"></div>
+            <div class="h-1 w-6 bg-white mb-1"></div>
+            <div class="h-1 w-6 bg-white"></div>
+          </div>
+        </nav>
+        <div
+          id="menu"
+          class="md:hidden menu hidden flex-col items-center text-white text-base space-y-4 p-4 bg-black absolute top-32 right-0 w-full"
+        >
+          <ul class="space-y-7">
+            <li><a href="#" class="hover:text-green-500">Company</a></li>
+            <li><a href="#" class="hover:text-green-500">Services</a></li>
+            <li>
+              <a href="#" class="hover:text-green-500">Business Models</a>
+            </li>
+            <li><a href="#" class="hover:text-green-500">Blogs</a></li>
+            <li><a href="#" class="hover:text-green-500">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- end header -->
+
+    <!-- Welcome Section -->
+    <section
+      class="bg-black text-white text-center py-10 flex flex-col items-center"
+    >
+      <h1 class="text-3xl sm:text-6xl md:text-8xl font-extrabold">
+        WELCOME <br />TO
+        <span
+          class="bg-gradient-to-r from-green-400 to-yellow-400 bg-clip-text text-transparent"
+          >CHAINTECH</span
+        >
+      </h1>
+      <p class="mt-4 md:text-base text-sm sm:w-2/3 w-full px-4">
+        From square one to engineering excellence! PixelPlex assists in
+        full-cycle software development, jumps in to take it over, or brings
+        dedicated top-demanded skills.
+      </p>
+      <div class="mt-6">
+        <button
+          class="bg-white px-5 py-1 text-black hover:bg-green-500 hover:text-white border-4 border-black rounded-full sm:px-8 sm:py-1 font-semibold flex items-center space-x-2 transition duration-300"
+        >
+          <span>Get Started</span>
+          <span
+            class="bg-black text-white rounded-full sm:p-4 p-2 flex items-center justify-center"
+          >
+            <i class="fa-solid fa-arrow-right"></i>
+          </span>
+        </button>
+      </div>
+    </section>
+
+    <!-- end welcome section -->
+
+    <!-- Services Section -->
+    <section class="py-14 max-w-[600px] px-3 md:px-2 md:max-w-[950px] mx-auto">
+      <div class="flex flex-col md:flex-row justify-between items-center mb-8">
+        <div class="mb-4 md:mb-0">
+          <h1 class="text-2xl md:text-4xl font-semibold">Services We Offer</h1>
+          <p class="mt-2 text-sm">
+            Discover the digital possibilities for your brand with our
+            comprehensive suite of services.
+          </p>
+        </div>
+        <div class="flex space-x-6">
+          <i
+            class="fa-solid fa-arrow-left p-3 rounded-full cursor-pointer border-2 border-transparent hover:border-black transition-all duration-200"
+          ></i>
+          <i
+            class="fa-solid fa-arrow-right p-3 rounded-full cursor-pointer border-2 border-transparent hover:border-black transition-all duration-200"
+          ></i>
+        </div>
+      </div>
+      <div
+        class="grid gap-5 w-full mx-auto grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-center"
+      >
+        <!-- card 1 -->
+        <div class="bg-[#dfffed] w-[220px] border-2 border-black rounded-2xl">
+          <div class="flex items-center py-1 px-3">
+            <img src="./images/vectors.png" alt="vector" class="w-8" />
+            <h2 class="font-semibold text-sm">Join Development</h2>
+          </div>
+          <div class="border border-black w-full"></div>
+          <h1 class="font-semibold text-lg text-center py-4 lg:px-6">
+            Blockchain Development
+          </h1>
+          <div class="relative">
+            <div class="w-full justify-center flex mx-auto">
+              <img src="./images/card1.png" alt="" class="w-[200px]" />
+            </div>
+            <div class="border absolute bottom-1 border-black w-full"></div>
+          </div>
+          <div class="flex py-2 justify-end px-2">
+            <button
+              class="gap-2 border border-black rounded-full px-4 py-1 bg-white hover:bg-black hover:text-white"
+            >
+              Explore
+              <i
+                class="fa-solid fa-arrow-right rounded-full p-2 text-black"
+                style="
+                  background: linear-gradient(270deg, #00ffa7 0%, #ffff00 100%);
+                "
+              ></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- card 2 -->
+        <div class="bg-[#d9fdff] w-[220px] border-2 border-black rounded-2xl">
+          <div class="flex items-center py-1 px-3">
+            <img src="./images/vectors.png" alt="vector" class="w-8" />
+            <h2 class="font-semibold text-sm">Join Development</h2>
+          </div>
+          <div class="border border-black w-full"></div>
+          <h1 class="font-semibold text-lg text-center py-4 lg:px-6">
+            Blockchain Development
+          </h1>
+          <div class="relative">
+            <div class="w-full justify-center flex mx-auto">
+              <img src="./images/card2.png" alt="" class="w-[180px]" />
+            </div>
+            <div class="border absolute bottom-1 border-black w-full"></div>
+          </div>
+          <div class="flex py-2 justify-end px-2">
+            <button
+              class="gap-2 border border-black rounded-full px-4 py-1 bg-white hover:bg-black hover:text-white"
+            >
+              Explore
+              <i
+                class="fa-solid fa-arrow-right rounded-full p-2 text-black"
+                style="
+                  background: linear-gradient(270deg, #00ffa7 0%, #ffff00 100%);
+                "
+              ></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- card 3 -->
+        <div class="bg-[#ffe6e6] w-[220px] border-2 border-black rounded-2xl">
+          <div class="flex items-center py-1 px-3">
+            <img src="./images/vectors.png" alt="vector" class="w-8" />
+            <h2 class="font-semibold text-sm">Join Development</h2>
+          </div>
+          <div class="border border-black w-full"></div>
+          <h1 class="font-semibold text-lg text-center py-4 lg:px-6">
+            Security AAS
+          </h1>
+          <div class="relative">
+            <div class="w-full justify-center flex mx-auto">
+              <img src="./images/card3.png" alt="" class="w-[190px]" />
+            </div>
+            <div class="border absolute bottom-1 border-black w-full"></div>
+          </div>
+          <div class="flex py-2 justify-end px-2">
+            <button
+              class="gap-2 border border-black rounded-full px-4 py-1 bg-white hover:bg-black hover:text-white"
+            >
+              Explore
+              <i
+                class="fa-solid fa-arrow-right rounded-full p-2 text-black"
+                style="
+                  background: linear-gradient(270deg, #00ffa7 0%, #ffff00 100%);
+                "
+              ></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- card 4 -->
+        <div class="bg-[#e0e3fb] w-[220px] border-2 border-black rounded-2xl">
+          <div class="flex items-center py-1 px-3">
+            <img src="./images/vectors.png" alt="vector" class="w-8" />
+            <h2 class="font-semibold text-sm">Join Development</h2>
+          </div>
+          <div class="border border-black w-full"></div>
+          <h1 class="font-semibold text-lg text-center py-4 lg:px-6">
+            Motion Graphic
+          </h1>
+          <div class="relative">
+            <div class="w-full justify-center flex mx-auto">
+              <img src="./images/card4.png" alt="" class="w-[190px]" />
+            </div>
+            <div class="border absolute bottom-1 border-black w-full"></div>
+          </div>
+          <div class="flex py-2 justify-end px-2">
+            <button
+              class="gap-2 border border-black rounded-full px-4 py-1 bg-white hover:bg-black hover:text-white"
+            >
+              Explore
+              <i
+                class="fa-solid fa-arrow-right rounded-full p-2 text-black"
+                style="
+                  background: linear-gradient(270deg, #00ffa7 0%, #ffff00 100%);
+                "
+              ></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- card 5 -->
+        <div class="bg-[#dfffed] w-[220px] border-2 border-black rounded-2xl">
+          <div class="flex items-center py-1 px-3">
+            <img src="./images/vectors.png" alt="vector" class="w-8" />
+            <h2 class="font-semibold text-sm">Join Development</h2>
+          </div>
+          <div class="border border-black w-full"></div>
+          <h1 class="font-semibold text-lg text-center py-4 lg:px-6">
+            Blockchain Development
+          </h1>
+          <div class="relative">
+            <div class="w-full justify-center flex mx-auto">
+              <img src="./images/card1.png" alt="" class="w-[200px]" />
+            </div>
+            <div class="border absolute bottom-1 border-black w-full"></div>
+          </div>
+          <div class="flex py-2 justify-end px-2">
+            <button
+              class="gap-2 border border-black rounded-full px-4 py-1 bg-white hover:bg-black hover:text-white"
+            >
+              Explore
+              <i
+                class="fa-solid fa-arrow-right rounded-full p-2 text-black"
+                style="
+                  background: linear-gradient(270deg, #00ffa7 0%, #ffff00 100%);
+                "
+              ></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- card 6 -->
+        <div class="bg-[#d9fdff] w-[220px] border-2 border-black rounded-2xl">
+          <div class="flex items-center py-1 px-3">
+            <img src="./images/vectors.png" alt="vector" class="w-8" />
+            <h2 class="font-semibold text-sm">Join Development</h2>
+          </div>
+          <div class="border border-black w-full"></div>
+          <h1 class="font-semibold text-lg text-center py-4 lg:px-6">
+            Blockchain Development
+          </h1>
+          <div class="relative">
+            <div class="w-full justify-center flex mx-auto">
+              <img src="./images/card2.png" alt="" class="w-[180px]" />
+            </div>
+            <div class="border absolute bottom-1 border-black w-full"></div>
+          </div>
+          <div class="flex py-2 justify-end px-2">
+            <button
+              class="gap-2 border border-black rounded-full px-4 py-1 bg-white hover:bg-black hover:text-white"
+            >
+              Explore
+              <i
+                class="fa-solid fa-arrow-right rounded-full p-2 text-black"
+                style="
+                  background: linear-gradient(270deg, #00ffa7 0%, #ffff00 100%);
+                "
+              ></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- card 7 -->
+        <div class="bg-[#ffe6e6] w-[220px] border-2 border-black rounded-2xl">
+          <div class="flex items-center py-1 px-3">
+            <img src="./images/vectors.png" alt="vector" class="w-8" />
+            <h2 class="font-semibold text-sm">Join Development</h2>
+          </div>
+          <div class="border border-black w-full"></div>
+          <h1 class="font-semibold text-lg text-center py-4 lg:px-6">
+            Security AAS
+          </h1>
+          <div class="relative">
+            <div class="w-full justify-center flex mx-auto">
+              <img src="./images/card3.png" alt="" class="w-[190px]" />
+            </div>
+            <div class="border absolute bottom-1 border-black w-full"></div>
+          </div>
+          <div class="flex py-2 justify-end px-2">
+            <button
+              class="gap-2 border border-black rounded-full px-4 py-1 bg-white hover:bg-black hover:text-white"
+            >
+              Explore
+              <i
+                class="fa-solid fa-arrow-right rounded-full p-2 text-black"
+                style="
+                  background: linear-gradient(270deg, #00ffa7 0%, #ffff00 100%);
+                "
+              ></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- card 8 -->
+        <div class="bg-[#e0e3fb] w-[220px] border-2 border-black rounded-2xl">
+          <div class="flex items-center py-1 px-3">
+            <img src="./images/vectors.png" alt="vector" class="w-8" />
+            <h2 class="font-semibold text-sm">Join Development</h2>
+          </div>
+          <div class="border border-black w-full"></div>
+          <h1 class="font-semibold text-lg text-center py-4 lg:px-6">
+            Motion Graphic
+          </h1>
+          <div class="relative">
+            <div class="w-full justify-center flex mx-auto">
+              <img src="./images/card4.png" alt="" class="w-[190px]" />
+            </div>
+            <div class="border absolute bottom-1 border-black w-full"></div>
+          </div>
+          <div class="flex py-2 justify-end px-2">
+            <button
+              class="gap-2 border border-black rounded-full px-4 py-1 bg-white hover:bg-black hover:text-white"
+            >
+              Explore
+              <i
+                class="fa-solid fa-arrow-right rounded-full p-2 text-black"
+                style="
+                  background: linear-gradient(270deg, #00ffa7 0%, #ffff00 100%);
+                "
+              ></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end services section -->
+
+    <!-- Footer -->
+    <footer class="bg-black text-gray-500 text-center py-4">
+      <img src="./images/Group.png" alt="Logo" class="mx-auto w-36" />
+      <hr class="border-t-2 border-gray-600 w-5/6 mx-auto my-4" />
+      <p class="text-sm">© 2024 Chaintech Network. All rights reserved.</p>
+    </footer>
+    <!-- end footer -->
+
+    <!-- humburger  -->
+    <script>
+      const menuToggle = document.getElementById("menu-toggle");
+      const menu = document.getElementById("menu");
+
+      const updateIcon = (isOpen) => {
+        if (isOpen) {
+          menuToggle.innerHTML = `
+                  <div class="text-white text-5xl">&times;</div>
+              `;
+        } else {
+          menuToggle.innerHTML = `
+                  <div class="h-1 w-6 bg-white mb-1"></div>
+                  <div class="h-1 w-6 bg-white mb-1"></div>
+                  <div class="h-1 w-6 bg-white"></div>
+              `;
+        }
+      };
+
+      menuToggle.addEventListener("click", () => {
+        const isOpen = menu.classList.toggle("hidden");
+        updateIcon(!isOpen);
+      });
+    </script>
+  </body>
+</html>
